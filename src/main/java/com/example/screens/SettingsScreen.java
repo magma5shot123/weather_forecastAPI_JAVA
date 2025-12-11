@@ -43,6 +43,8 @@ public class SettingsScreen {
         root.getChildren().addAll(tempToggleBox, buttonHBox);
         root.setAlignment(Pos.CENTER);
 
+        root.getStylesheets().add(getClass().getResource("/styles/SettingsScreenStyle.css").toExternalForm());
+
         return root;
     }
 }

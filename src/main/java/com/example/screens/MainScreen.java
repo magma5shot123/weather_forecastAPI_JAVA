@@ -14,11 +14,13 @@ public class MainScreen {
     
     public VBox getRoot() {
         TextArea weatherOutput = new TextArea();
+        weatherOutput.getStyleClass().add("weatherOutput");
         weatherOutput.setEditable(false);
         weatherOutput.setWrapText(true);
 
         //Создания текстового поля куда можно вводить текст
         TextField textField = new TextField();
+        textField.getStyleClass().add("textField");
         textField.setPromptText("Entry your city...");
         textField.setPrefWidth(200);
 
@@ -27,10 +29,12 @@ public class MainScreen {
 
         //Кнопка для поиска погоды в введённом городе
         Button checkBtn = new Button("Looking for");
+        checkBtn.getStyleClass().add("checkButton");
         controller.handleCheckButton(checkBtn);
 
         //Кнопка для настроек
         Button settingsBtn = new Button("Settings");
+        settingsBtn.getStyleClass().add("settingButton");
         controller.handleSettingsButton(settingsBtn);
 
         //Горизонтальная линия для расположения кнопок
@@ -43,6 +47,8 @@ public class MainScreen {
         root.getChildren().addAll(weatherOutput, textField, buttonBox);
         root.setAlignment(Pos.CENTER);
         root.setPadding(new Insets(20));
+
+        root.getStylesheets().add(getClass().getResource("/styles/MainScreenStyle.css").toExternalForm());
 
         return root;
     }
