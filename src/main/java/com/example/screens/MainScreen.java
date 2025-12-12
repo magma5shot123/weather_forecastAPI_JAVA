@@ -1,6 +1,7 @@
 package com.example.screens;
 
 import com.example.Controllers.MainScreenController;
+import com.example.Models.SettingsModel;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -11,6 +12,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 public class MainScreen {
+
+    private SettingsModel settingsModel;
+
+    public MainScreen(SettingsModel settingsModel) {
+        this.settingsModel = settingsModel;
+    }
     
     public VBox getRoot() {
         TextArea weatherOutput = new TextArea();
@@ -25,7 +32,7 @@ public class MainScreen {
         textField.setPrefWidth(200);
 
         //Создания контроллера для отслеживания нажатия кнопок
-        MainScreenController controller = new MainScreenController(textField, weatherOutput);
+        MainScreenController controller = new MainScreenController(textField, weatherOutput, this.settingsModel);
 
         //Кнопка для поиска погоды в введённом городе
         Button checkBtn = new Button("Looking for");
@@ -37,9 +44,13 @@ public class MainScreen {
         settingsBtn.getStyleClass().add("settingButton");
         controller.handleSettingsButton(settingsBtn);
 
+        Button clearOutputBtn = new Button("Clear");
+        clearOutputBtn.getStyleClass().add("clearOutputButton");
+        controller.handleClearOutputButton(clearOutputBtn);
+
         //Горизонтальная линия для расположения кнопок
         HBox buttonBox = new HBox(10);
-        buttonBox.getChildren().addAll(checkBtn, settingsBtn);
+        buttonBox.getChildren().addAll(checkBtn, settingsBtn, clearOutputBtn);
         buttonBox.setAlignment(Pos.CENTER);
 
         //Вериткальная линия для расположения всего
