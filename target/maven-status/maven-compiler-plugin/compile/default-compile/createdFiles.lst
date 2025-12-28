@@ -1,6 +1,6 @@
 com\example\Controllers\MainScreenController.class
+com\example\App.class
+com\example\screens\SettingsScreen.class
 com\example\Managers\ScreenManager.class
 com\example\Controllers\SettingsScreenController.class
 com\example\screens\MainScreen.class
-com\example\App.class
-com\example\screens\SettingsScreen.class

@@ -2,5 +2,8 @@ E:\javaProjects\train_java_fx\src\main\java\com\example\App.java
 E:\javaProjects\train_java_fx\src\main\java\com\example\Controllers\MainScreenController.java
 E:\javaProjects\train_java_fx\src\main\java\com\example\Controllers\SettingsScreenController.java
 E:\javaProjects\train_java_fx\src\main\java\com\example\Managers\ScreenManager.java
+E:\javaProjects\train_java_fx\src\main\java\com\example\Models\SettingsModel.java
+E:\javaProjects\train_java_fx\src\main\java\com\example\Models\Weather.java
 E:\javaProjects\train_java_fx\src\main\java\com\example\screens\MainScreen.java
 E:\javaProjects\train_java_fx\src\main\java\com\example\screens\SettingsScreen.java
+E:\javaProjects\train_java_fx\src\main\java\com\example\Services\WeatherServices.java

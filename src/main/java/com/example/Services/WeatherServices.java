@@ -10,7 +10,7 @@ import okhttp3.Response;
 
 public class WeatherServices {
     
-    private static final String API_KEY = "11c05e9913eaa23cb6a2c9e3d50d3e0a";
+    private static final String API_KEY = "YOU`RE API KEY";
 
     private static final String BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
 
