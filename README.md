@@ -43,7 +43,7 @@ Replace YOUR_API_KEY with your personal OpenWeather API key
 ```
 private static final String API_KEY = "YOUR_API_KEY";
 ```
-Run the JavaFX application
+## Run the JavaFX application
 
 ```
 mvn javafx:run
@@ -57,5 +57,6 @@ The app fetches live weather data from OpenWeather API, so an internet connectio
 
 Make sure your JavaFX SDK is configured correctly if running from IDE.
 
-Team
-Dima Polegenkii — Developer (JavaFX + Java 25) — tg://resolve?domain=dima_polegenkii
+## Team
+- Dima Polegenkii — Developer (JavaFX + Java 25) 
+- telegram: @squizzysw
